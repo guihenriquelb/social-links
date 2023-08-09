@@ -1,8 +1,6 @@
 const html = document.documentElement
 let lightMode = localStorage.getItem("light-mode")
 
-
-
 function enableLightMode() {
   html.classList.toggle("light")
   localStorage.setItem("light-mode", "enabled")
@@ -17,7 +15,6 @@ if (lightMode === "enabled") {
   enableLightMode()
 }
 
-
 function toggleMode() {
  
   if (lightMode === "disabled") {
@@ -25,11 +22,7 @@ function toggleMode() {
   } else {
     disableLightMode()
   }
-
- 
-
-
-
+  
 }
 
 
